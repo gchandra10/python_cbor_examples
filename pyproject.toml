@@ -1,0 +1,14 @@
+[tool.poetry]
+name = "python-cbor-examples"
+version = "0.1.0"
+description = ""
+authors = ["Ganesh Chandrasekaran <gchandra@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+cbor2 = "^5.6.5"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
