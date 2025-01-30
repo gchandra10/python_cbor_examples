@@ -10,17 +10,17 @@ data = {
 
 # Encode to CBOR
 cbor_data = cbor2.dumps(data)
-print("CBOR (Hex):", cbor_data.hex())  # Output: a4...f5
+print("CBOR (Hex):", cbor_data.hex())
 
 # Decode from CBOR
 decoded = cbor2.loads(cbor_data)
 print("\n\n\n Decoded:", decoded)
     
-# Save to file
+# Save as a binary file
 with open("sensor_data.cbor", "wb") as f:
     cbor2.dump(data, f)
     
-# Read from file
+# Read from the binary file
 with open("sensor_data.cbor", "rb") as f:
     loaded_data = cbor2.load(f)
 
